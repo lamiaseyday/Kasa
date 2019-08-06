@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Av. Hayrettin Hayroldu</string>
+
+    <string-array name="names">
+        <item>Seçilen Dosya 1</item>
+        <item>Seçilen Dosya 2</item>
+        <item>Seçilen Dosya 3</item>
+        <item>Seçilen Dosya 4</item>
+    </string-array>
+</resources>

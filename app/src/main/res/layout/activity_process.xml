@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".ProcessActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarProcess"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:padding="15sp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.ActionMenuView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="285dp"
+            android:background="@drawable/exit"
+            android:onClick="cikis"
+            tools:ignore="OnClick"></androidx.appcompat.widget.ActionMenuView>
+
+    </androidx.appcompat.widget.Toolbar>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lnr"
+            android:layout_width="335dp"
+            android:layout_height="25dp"
+            android:orientation="vertical"
+            android:layout_marginTop="85dp">
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/angry_btn2"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:text="Masraf Tipi"
+            android:textStyle="bold"
+            android:textAllCaps="true" />
+
+        <Spinner
+            android:id="@+id/spinnerMas"
+            android:layout_width="335dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/spinner_back" />
+
+        <EditText
+            android:id="@+id/editText11"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:ems="20"
+            android:layout_marginLeft="13dp"
+            android:hint="Masraf Bedeli"
+            android:inputType="number"
+            android:backgroundTint="@color/colorBlue"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/masraf_isle"
+            android:layout_width="335dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btnshape_parolaunuttum"
+            android:text="MASRAFI İŞLE"
+            android:layout_marginLeft="13dp"
+            android:onClick="masrafİsle"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+
+
+</RelativeLayout>

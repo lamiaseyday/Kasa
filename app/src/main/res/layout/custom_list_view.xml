@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EEEEEE"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    tools:context=".SelectedActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/buro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:textStyle="bold"
+                android:text="Büro No" />
+
+            <TextView
+                android:id="@+id/buroNokta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:textStyle="bold"
+                android:text="¦" />
+
+            <TextView
+                android:id="@+id/buroNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:maxLength="6"
+                android:layout_marginLeft="8dp"
+                android:text="456789" />
+
+
+            <TextView
+                android:id="@+id/esas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:textStyle="bold"
+                android:text="Esas No" />
+
+            <TextView
+                android:id="@+id/esasNokta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:textStyle="bold"
+                android:text="¦" />
+
+            <TextView
+                android:id="@+id/esasNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:maxLength="6"
+                android:layout_marginLeft="8dp"
+                android:text="45789" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mahk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="0dp"
+                        android:text="Mahkeme" />
+
+                    <TextView
+                        android:id="@+id/mahkemeNokta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+                        android:textStyle="bold"
+                        android:text="¦" />
+
+                    <TextView
+                        android:id="@+id/mahkeme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:maxLength="30"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="İsmi ağır ceza mahkemesi" />
+
+
+                    <ImageView
+                        android:id="@+id/imageCheck"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="176dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/check"
+                        android:visibility="gone"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/borclu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:textStyle="bold"
+                        android:text="Borçlu İsmi" />
+
+                    <TextView
+                        android:id="@+id/borcluNokta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:textStyle="bold"
+                        android:text="¦" />
+
+                    <TextView
+                        android:id="@+id/borcluİsmi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:maxLength="30"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Şeyda Yerlikaya" />
+                </LinearLayout>
+
+                <View
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#b2b0b0"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical"
+    tools:context=".SearchActivity">
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="Müvekkil"
+        android:backgroundTint="@color/colorLightG"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText4"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Karşı Taraf"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText5"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Çalışan"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText6"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Büro No"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText7"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Esas No"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText8"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Kalemi"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/angry_btn3"
+        android:layout_width="251dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/editText9"
+        android:layout_alignStart="@+id/editText9"
+        android:layout_alignEnd="@+id/editText9"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/btnshape_parolaunuttum"
+        android:shadowColor="#47A447"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="ARAMA YAP"
+        android:onClick="search"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        tools:ignore="OnClick" />
+
+</RelativeLayout>
