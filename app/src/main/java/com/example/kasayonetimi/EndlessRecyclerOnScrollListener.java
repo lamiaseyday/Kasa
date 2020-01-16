@@ -22,7 +22,6 @@ public abstract class EndlessRecyclerOnScrollListener extends
             LinearLayoutManager linearLayoutManager) {
         this.mLinearLayoutManager = linearLayoutManager;
     }
-
     @Override
     public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
         super.onScrolled(recyclerView, dx, dy);
@@ -30,25 +29,20 @@ public abstract class EndlessRecyclerOnScrollListener extends
         visibleItemCount = recyclerView.getChildCount();
         totalItemCount = mLinearLayoutManager.getItemCount();
         firstVisibleItem = mLinearLayoutManager.findFirstVisibleItemPosition();
-
         if (loading) {
             if (totalItemCount > previousTotal) {
                 loading = false;
                 previousTotal = totalItemCount;
             }
         }
-        if (!loading
-                && (totalItemCount - visibleItemCount) <= (firstVisibleItem + visibleThreshold)) {
-            // End has been reached
-
-            // Do something
+        if (!loading && (totalItemCount - visibleItemCount) <= (firstVisibleItem + visibleThreshold)) {
+            /**
+             * Sonuna ulaşılınca.
+             */
             current_page++;
-
             onLoadMore(current_page);
-
             loading = true;
         }
     }
-
     public abstract void onLoadMore(int current_page);
 }

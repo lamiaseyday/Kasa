@@ -9,10 +9,14 @@ public class SelectItems implements Serializable {
     private String mahkeme;
     private String borcluİsim;
     private boolean isSelected = false;
-    private int item;
-
+    private int listID;
 
     public SelectItems() {
+    }
+
+    public SelectItems(String esasNo, String borcluİsim) {
+        this.esasNo = esasNo;
+        this.borcluİsim = borcluİsim;
     }
 
     public SelectItems(String buroNo, String esasNo, String mahkeme, String borcluİsim) {
@@ -22,12 +26,12 @@ public class SelectItems implements Serializable {
         this.borcluİsim = borcluİsim;
     }
 
-    public int getItem() {
-        return item;
+    public int getListID() {
+        return listID;
     }
 
-    public void setItem(int item) {
-        this.item = item;
+    public void setListID(int listID) {
+        this.listID = listID;
     }
 
     public String getBuroNo() {
@@ -45,7 +49,6 @@ public class SelectItems implements Serializable {
     public void setEsasNo(String esasNo) {
         this.esasNo = esasNo;
     }
-
 
     public String getMahkeme() {
         return mahkeme;
@@ -73,5 +76,4 @@ public class SelectItems implements Serializable {
     public boolean isSelected() {
         return isSelected;
     }
-
 }

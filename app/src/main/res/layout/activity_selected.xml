@@ -12,72 +12,73 @@
         android:id="@+id/islemler_toolbar_baslik"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorLightG">
+        android:background="@color/colorBlue">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="0dp"
+            android:src="@drawable/kasa_logo" />
+
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
             android:text="Av. Hayrettin Hayroldu"
-            android:textSize="25sp"
             android:textColor="#fff"
-            android:textStyle="bold"/>
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="55dp"
+            android:src="@drawable/exit"
+            android:onClick="exitApp"
+            tools:ignore="OnClick" />
 
     </androidx.appcompat.widget.Toolbar>
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/islemler_toolbar"
+
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorLightG">
-
-        <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="265dp"
-            android:layout_marginRight="15dp"
-            android:background="@drawable/ok"
-            android:onClick="onayla"
-            tools:ignore="OnClick"></ImageView>
-
-        <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="5dp"
-            android:background="@drawable/exit"
-            android:onClick="cikis"
-            tools:ignore="OnClick"></ImageView>
-
-
-    </androidx.appcompat.widget.Toolbar>
-
-    <TextView
-        android:id="@+id/secim_yapin"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="Masraf işlemek için dosya seçimi yapın."
-        android:textAlignment="center"
-        android:padding="3dp"
-        android:textColor="@color/colorBlue"/>
-
-    <EditText
-        android:id="@+id/search"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginBottom="5dp"
         android:background="@color/colorBlue"
-        android:backgroundTint="@color/colorBlue"
-        android:drawableLeft="@drawable/search_item"
-        android:hint=" Dosya Ara..."
-        android:onClick="arama"
-        android:padding="10dp"
-        android:textColor="#fff"
-        android:textColorHighlight="@color/colorLightG"
+        android:orientation="horizontal">
 
-        android:textColorHint="#EEEEEE"
-        android:textColorLink="#4CAF50"
-        android:textCursorDrawable="@drawable/color_cursor"
-        android:textSize="15sp"
-        tools:ignore="OnClick" />
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorBlue"
+            android:backgroundTint="@color/colorBlue"
+            android:drawableLeft="@drawable/search_item"
+            android:hint="    Dosya Ara..."
+            android:onClick="arama"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textColorHighlight="@color/colorLightG"
+            android:textColorHint="#EEEEEE"
+            android:textColorLink="#4CAF50"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="15sp"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/clear"
+            android:onClick="clear"
+            tools:ignore="OnClick"
+            android:visibility="gone"/>
+
+    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -86,8 +87,8 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerview_list"
-            android:layout_width="match_parent"
-            android:layout_height="410dp"
+            android:layout_width="398dp"
+            android:layout_height="419dp"
             android:scrollbars="vertical" />
 
         <TextView
@@ -101,6 +102,71 @@
             android:textAlignment="center"
             android:textStyle="bold"
             android:textColor="@color/colorBlue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="420dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:onClick="onayla">
+
+                <LinearLayout
+                    android:id="@+id/lnrOnayla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onayla">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ok" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="22dp"
+                android:text="SEÇİMLERİ ONAYLA"
+                android:textSize="13sp" />
+
+                </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrİptal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:onClick="iptal"
+            tools:ignore="OnClick">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tamamlaislem" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="22dp"
+                android:text="SEÇİMLERİ İPTAL ET"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
 
     </RelativeLayout>
 

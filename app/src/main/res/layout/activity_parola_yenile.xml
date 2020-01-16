@@ -37,10 +37,9 @@
         android:textSize="12sp"
         android:fontFamily="sans-serif-condensed"
         android:ems="10"
-        android:hint="Büro Kod"
-        android:inputType="textPersonName"
+        android:hint="Yeni Parola"
+        android:inputType="textPassword"
         android:textAlignment="center" />
-
     <EditText
         android:id="@+id/edtKullaniciAdi"
         android:layout_width="wrap_content"
@@ -56,32 +55,14 @@
         android:fontFamily="sans-serif-condensed"
         android:textSize="12sp"
         android:ems="10"
-        android:hint="Kullanıcı Adı"
-        android:inputType="textPersonName"
-        android:textAlignment="center" />
-
-    <EditText
-        android:id="@+id/edtParola"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/edtKullaniciAdi"
-        android:layout_alignStart="@+id/edtKullaniciAdi"
-        android:layout_alignEnd="@+id/edtKullaniciAdi"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="15dp"
-        android:backgroundTint="@color/colorBlue"
-        android:textCursorDrawable="@drawable/color_cursor"
-        android:ems="10"
-        android:fontFamily="sans-serif-condensed"
-        android:textSize="12sp"
-        android:hint="Parola"
-        android:inputType="textWebPassword"
+        android:hint="Yeni Parola Tekrar"
+        android:inputType="textPassword"
         android:textAlignment="center" />
     <Button
-        android:id="@+id/btn_giris"
-        android:layout_width="150dp"
-        android:layout_height="35dp"
-        android:layout_below="@+id/edtParola"
+        android:id="@+id/btn_parolayenile"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/edtKullaniciAdi"
         android:layout_alignStart="@+id/edtKullaniciAdi"
         android:layout_alignEnd="@+id/edtKullaniciAdi"
         android:layout_marginStart="37dp"
@@ -89,36 +70,15 @@
         android:layout_marginEnd="35dp"
         android:fontFamily="sans-serif-condensed"
         android:background="@drawable/btnshape_giris"
-        android:onClick="giris"
+        android:onClick="ParolaYenile"
         android:shadowColor="#39B3D7"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
-        android:text="GİRİŞ"
+        android:text="PAROLAMI DEĞİŞTİR"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
         tools:ignore="OnClick" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="27dp"
-        android:layout_above="@+id/imageView5"
-        android:layout_alignStart="@+id/imageView5"
-        android:layout_alignTop="@+id/imageView4"
-        android:layout_alignEnd="@+id/imageView5"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="-1dp"
-        android:fontFamily="sans-serif-condensed"
-        android:layout_marginBottom="27dp"
-        android:text="ADOP"
-        android:textSize="20sp"
-        android:textColor="#EEEEEE"
-        android:textStyle="bold"
-        android:textAlignment="center"/>
-
     <ImageView
         android:layout_width="25dp"
         android:layout_height="25dp"
@@ -127,20 +87,4 @@
         android:layout_marginEnd="-81dp"
         android:layout_marginBottom="17dp"
         android:src="@drawable/aelogo" />
-
-    <TextView
-        android:id="@+id/parolaUnuttum"
-        android:layout_width="118dp"
-        android:layout_height="32dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginEnd="122dp"
-        android:layout_marginBottom="227dp"
-        android:fontFamily="sans-serif-condensed"
-        android:onClick="ParolamiUnuttum"
-        android:text="| Parolamı Unuttum |"
-        android:textAlignment="center"
-        android:textSize="12sp"
-        tools:ignore="OnClick" />
 </RelativeLayout>

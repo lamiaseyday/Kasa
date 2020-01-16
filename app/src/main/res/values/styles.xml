@@ -10,15 +10,15 @@
 
     <style name="AppThemeiki" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorLightG</item>
+        <item name="colorPrimary">@color/colorBlue</item>
         <item name="colorPrimaryDark">@color/colorLightG</item>
         <item name="colorAccent">@color/colorLightG</item>
     </style>
 
     <style name="AppThemeUc" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorLightG</item>
-        <item name="colorPrimaryDark">@color/colorBlue</item>
+        <item name="colorPrimary">@color/colorBlue</item>
+        <item name="colorPrimaryDark">@color/colorLightG</item>
         <item name="colorAccent">@color/colorBlue</item>
     </style>
 

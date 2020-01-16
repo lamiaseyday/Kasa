@@ -10,22 +10,29 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarProcess"
         android:layout_width="match_parent"
-        android:layout_height="67dp"
+        android:layout_height="57dp"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:padding="15sp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/kasa_logo" />
+
         <androidx.appcompat.widget.ActionMenuView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="285dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="-25dp"
+            android:layout_marginStart="240dp"
             android:background="@drawable/exit"
             android:onClick="cikis"
             tools:ignore="OnClick"></androidx.appcompat.widget.ActionMenuView>
 
     </androidx.appcompat.widget.Toolbar>
-    
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,8 +42,8 @@
             android:id="@+id/lnr"
             android:layout_width="335dp"
             android:layout_height="25dp"
-            android:orientation="vertical"
-            android:layout_marginTop="85dp">
+            android:layout_marginTop="85dp"
+            android:orientation="vertical">
 
 
         </LinearLayout>
@@ -45,11 +52,11 @@
             android:layout_width="100dp"
             android:layout_height="30dp"
             android:layout_below="@+id/angry_btn2"
-            android:layout_marginTop="30dp"
             android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
             android:text="Masraf Tipi"
-            android:textStyle="bold"
-            android:textAllCaps="true" />
+            android:textAllCaps="true"
+            android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/spinnerMas"
@@ -60,16 +67,16 @@
             android:background="@drawable/spinner_back" />
 
         <EditText
-            android:id="@+id/editText11"
+            android:id="@+id/masrafBedel"
             android:layout_width="335dp"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="5dp"
-            android:ems="20"
             android:layout_marginLeft="13dp"
-            android:hint="Masraf Bedeli"
-            android:inputType="number"
+            android:layout_marginTop="5dp"
             android:backgroundTint="@color/colorBlue"
+            android:ems="20"
+            android:hint="Masraf Bedeli"
+            android:inputType="numberDecimal"
             android:textCursorDrawable="@drawable/color_cursor"
             android:textSize="15sp" />
 
@@ -77,15 +84,43 @@
             android:id="@+id/masraf_isle"
             android:layout_width="335dp"
             android:layout_height="25dp"
+            android:layout_marginLeft="13dp"
             android:layout_marginTop="15dp"
             android:background="@drawable/btnshape_parolaunuttum"
-            android:text="MASRAFI İŞLE"
-            android:layout_marginLeft="13dp"
             android:onClick="masrafİsle"
+            android:text="MASRAFI İŞLE"
             android:textColor="#FFFFFF"
             android:textSize="12sp"
             tools:ignore="OnClick" />
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="300dp">
 
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imageanim"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="visible" />
+
+            <ListView
+                android:id="@+id/seciliListe"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:visibility="gone"/>
+        </FrameLayout>
+    </LinearLayout>
 </RelativeLayout>
